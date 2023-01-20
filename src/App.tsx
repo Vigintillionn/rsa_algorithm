@@ -44,7 +44,7 @@ function App() {
         <p className="text-lg w-2/5 text-center">Dit is een visuele representatie van het RSA algoritme, gemaakt voor onze onderzoekscompetentie Wiskunde.</p>
       </header>
       <main className="flex mt-4 mx-[5%] items-start gap-8">
-        <div className="w-full">
+        <div className="w-full mb-24">
           <form ref={form} className="flex flex-col w-full">
             <div className="flex flex-col">
               <span className="font-bold">Uw Bericht:</span>
