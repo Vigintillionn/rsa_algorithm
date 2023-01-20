@@ -9,7 +9,8 @@ The RSA algorithm is one of the most widely used encryption algorithms. It is an
 ## How does it work?
 
 1. Generate the keys
-   We need to generate both a public and a private key. First we pick two large prime numbers, p and q. Then we calculate n by multiplying p and q. Such that n = p \* q.
+
+We need to generate both a public and a private key. First we pick two large prime numbers, p and q. Then we calculate n by multiplying p and q. Such that n = p \* q.
 
 We choose a third number, e, such that e is coprime with the product phi. Phi is the product of (p - 1) and (q - 1). In other words the greatest common divider of e and (p -1)(q - 1) must equal 1.
 
