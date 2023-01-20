@@ -12,7 +12,7 @@ const getPrime = (bits: number): BigInteger => {
 }
 
 export const getKeys = (keysize: number): IKeys => {
-  const e: BigInteger = bigInt(65537);
+  const e: BigInteger = bigInt.one.shiftLeft(16).next();
   let p: BigInteger;
   let q: BigInteger;
   let phi: BigInteger;
@@ -46,15 +46,15 @@ export const encode = (str: string): BigInteger => {
   .map(i => i.charCodeAt(0))
   .join('');
 
-  return bigInt(charCodes);
+  return bigInt.zero.add(charCodes);
 }
 
 export const encrypt = (encodedMessage: BigInteger, e: BigInteger, n: BigInteger): BigInteger => {
-  return bigInt(encodedMessage).modPow(e, n);
+  return bigInt.zero.add(encodedMessage).modPow(e, n);
 }
 
 export const decrypt = (encryptedMessage: BigInteger, d: BigInteger, n: BigInteger) => {
-  return bigInt(encryptedMessage).modPow(d, n);
+  return bigInt.zero.add(encryptedMessage).modPow(d, n);
 }
 
 
