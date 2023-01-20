@@ -4,20 +4,38 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .maingrid {
-  grid-template-rows: 18vh 1fr 10vh;
+  grid-template-rows: 25vh 2fr 1fr 10vh;
   grid-template-areas: 
     "header"
-    "main"
+    "encrypt"
+    "keys"
     "footer";
+}
+
+@media screen and (min-width: 768px) {
+  .maingrid {
+    grid-template-rows: 25vh 1fr 20vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "header header"
+      "encrypt keys"
+      "footer footer";
+  }
 }
 
 header {
   grid-area: header;
 }
 
-main {
-  grid-area: main;
+.encrypt {
+  grid-area: encrypt;
+}
+
+.keys {
+  grid-area: keys;
 }
 
 footer {
