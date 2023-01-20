@@ -1,6 +1,6 @@
 # RSA Algorithm
 
-Heya! This is my implementation and visual representation of the RSA algorithm. It is made for our research competency for mathematics. Where we study different types of prime numbers and how they are used in the modern world.
+Heya! This is my implementation and visual representation of the RSA algorithm. It is made for our research competency for mathematics, where we study different types of prime numbers and how they are used in the modern world.
 
 ## What is the RSA algorithm?
 
