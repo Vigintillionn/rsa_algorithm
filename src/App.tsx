@@ -87,7 +87,7 @@ function App() {
       </section>
       <footer className="bg-stone-900 flex items-center justify-center relative">
         <span className="text-lg text-white">Met &#9825; gemaakt door Yarne</span>
-        <a href="github.com" className="absolute right-8 text-white text-4xl hover:opacity-50 transition-opacity"><FontAwesomeIcon icon={faGithub} /></a>
+        <a href="https://github.com/Vigintillionn/rsa_algorithm" className="absolute right-8 text-white text-4xl hover:opacity-50 transition-opacity"><FontAwesomeIcon icon={faGithub} /></a>
       </footer>
     </div>
   )
